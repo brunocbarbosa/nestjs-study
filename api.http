@@ -4,7 +4,7 @@ GET http://localhost:3000
 GET http://localhost:3000/orders
 
 ###
-GET http://localhost:3000/orders/4b14eb1d-4789-4deb-b21d-a7dae5689668
+GET http://localhost:3000/orders/:id
 
 ###
 POST http://localhost:3000/orders
@@ -15,7 +15,7 @@ Content-Type: application/json
 }
 
 ###
-PATCH http://localhost:3000/orders/b53dab5b-81e2-4bc6-98dd-675aea23b58f
+PATCH http://localhost:3000/orders/:id
 Content-Type: application/json
 
 {
@@ -24,4 +24,4 @@ Content-Type: application/json
 }
 
 ###
-DELETE http://localhost:3000/orders/b53dab5b-81e2-4bc6-98dd-675aea23b58f
+DELETE http://localhost:3000/orders/:id
