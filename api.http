@@ -11,17 +11,17 @@ POST http://localhost:3000/orders
 Content-Type: application/json
 
 {
-    "amount": 1000.99,
+    "amount": 1000.99
+}
+
+###
+PATCH http://localhost:3000/orders/b53dab5b-81e2-4bc6-98dd-675aea23b58f
+Content-Type: application/json
+
+{
+    "amount": 2000.99,
     "status": "approved"
 }
 
 ###
-PATCH http://localhost:3000/orders/bcc12652-e544-453f-af68-97bf4034de5e
-Content-Type: application/json
-
-{
-    "amount": 2000.99
-}
-
-###
-DELETE http://localhost:3000/orders/4e81bdfb-a06d-4619-9ca6-152756f55d4c
+DELETE http://localhost:3000/orders/b53dab5b-81e2-4bc6-98dd-675aea23b58f
